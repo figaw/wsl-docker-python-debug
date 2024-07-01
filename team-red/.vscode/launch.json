@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "folders": [
+    {
+      "path": "./client"
+    },
+    {
+      "path": "./server"
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Docker: Python - Flask - Client",
+      "type": "docker",
+      "request": "launch",
+      "preLaunchTask": "docker-run: debug client",
+      "python": {
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}/client",
+            "remoteRoot": "/app"
+          }
+        ],
+        "projectType": "flask"
+      }
+    },
+    {
+      "name": "Docker: Python - Flask - Server",
+      "type": "docker",
+      "request": "launch",
+      "preLaunchTask": "docker-run: debug server",
+      "python": {
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}/server",
+            "remoteRoot": "/app"
+          }
+        ],
+        "projectType": "flask"
+      }
+    }
+  ]
+}

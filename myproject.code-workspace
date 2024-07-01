@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "./"
+    },
+    {
+      "name": "super-long",
+      "path": "super-long-project-name-1"
+    },
+    {
+      "name": "another-long",
+      "path": "team-blue/another-long-project-name-2"
+    },
+    {
+      "path": "team-blue/the-third-even-longer-wow-this-is-a-name-folder-project-name-3"
+    },
+    {
+      "path": "team-red"
+    }
+  ],
+  "settings": {},
+  "launch": {}
+}
